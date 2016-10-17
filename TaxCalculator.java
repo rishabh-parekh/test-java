@@ -1,24 +1,5 @@
 /*
-AP computers
-Program 1
-
-Write a program that computers a person's income tax. The user inputs are
-1. The person's name
-2. The Gross income
-3. The number of dependents
-
-The program calculates the income tax based on the inpute and the tax law and then displays the income tax.
-
-The relevant tax law (mythical in nature):
-   There is a flat tax rate of 20%
-   There is a $10,000 standard deduction
-   There is a $2000 additional deduction for each dependents
-   Gross income must be entered to the nearest penny
-   The income tax is expressed as a decimal number
-
-When constructing the program, generate three constants.
-
-Remember to create the algorithm and program description with this program
+Tax Calculator
 */
 
 import java.io.*;
