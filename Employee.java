@@ -1,4 +1,5 @@
-public class Employee {
+public class Employee 
+{
   private String name;
   private double hourlyRate;
   private double overTimeHours;
@@ -12,50 +13,61 @@ public class Employee {
   /* The constant OVERTIMERATE */
    public static final double OVERTIMERATE = 1.5;
 
-  public String getName() {
+  public String getName() 
+  {
    return this.name;
   }
 
-  public void setName(String name) {
+  public void setName(String name) 
+  {
    this.name = name;
   }
 
-  public double getHourlyRate() {
+  public double getHourlyRate() 
+  {
     return this.hourlyRate;
   }
 
-  public void setHourlyRate(double hourlyRate) {
+  public void setHourlyRate(double hourlyRate) 
+  {
     this.hourlyRate = hourlyRate;
   }
 
-  public double getOverTimeHours() {
+  public double getOverTimeHours() 
+  {
     return this.overTimeHours;
   }
 
-  public void setOverTimeHours(double overTimeHours) {
+  public void setOverTimeHours(double overTimeHours) 
+  {
     this.overTimeHours = overTimeHours;
   }
 
-  public double getRegularHours() {
+  public double getRegularHours() 
+  {
     return this.regularHours;
   }
 
-  public void setRegularHours(double regularHours) {
+  public void setRegularHours(double regularHours) 
+  {
     this.regularHours = regularHours;
   }
 
 
-  public double calculateRegularPay() {
+  public double calculateRegularPay() 
+  {
     regularPay = regularHours * hourlyRate ;
     return regularPay;
   }
 
-  public double calculateOverTimePay() {
+  public double calculateOverTimePay() 
+  {
     overTimePay = overTimeHours * OVERTIMERATE * hourlyRate;
     return overTimePay;
   }
 
-  public double calculateGrossPay() {
+  public double calculateGrossPay() 
+  {
     grossPay = regularPay + overTimePay;
     return grossPay;
 
