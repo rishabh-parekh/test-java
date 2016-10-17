@@ -2,9 +2,11 @@
 import java.io.*;
 import java.util.*;
 
-public class EmployeePay {
+public class EmployeePay 
+{
 
-   public static void main(String[] args) {
+   public static void main(String[] args) 
+   {
       /* initialize the variables */
       double grossPay, regularPay, overTimePay = 0;
 
@@ -42,7 +44,8 @@ public class EmployeePay {
 
       System.out.println("Employee Name \t|Regular Pay\t|OverTime Pay\t|Total Gross Pay | ");
 
-      for (ListIterator<Employee> iter = employeeList.listIterator(); iter.hasNext(); ) {
+      for (ListIterator<Employee> iter = employeeList.listIterator(); iter.hasNext(); ) 
+      {
           Employee employee = iter.next();
           System.out.print(employee.getName() + "\t|");
           System.out.print(employee.calculateRegularPay()  + "\t|");
