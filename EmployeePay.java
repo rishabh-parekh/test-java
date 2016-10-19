@@ -41,11 +41,12 @@ public class EmployeePay
         employeeList.add(employee);
 
       }
-      for (int i = 0; i < 84; i++ ) System.out.print("-");
-      System.out.println("");
+      printDivider();
+
       System.out.println(padTwenty("Employee Name") + "|" + padTwenty("Regular Pay") + "|" + padTwenty("OverTime Pay") + "|" + padTwenty("Total Gross Pay") + "|");
-      for (int i = 0; i < 84; i++ ) System.out.print("-");
-      System.out.println("");
+
+      printDivider();
+
       for (ListIterator<Employee> iter = employeeList.listIterator(); iter.hasNext(); )
       {
           Employee employee = iter.next();
@@ -54,10 +55,13 @@ public class EmployeePay
           System.out.print(padTwenty(Double.toString(employee.calculateOverTimePay())) + "|");
           System.out.println(padTwenty(Double.toString(employee.calculateGrossPay())) + "|");
        }
-       for (int i = 0; i < 84; i++ ) System.out.print("-");
-       System.out.println("");
+       printDivider();
    }
 
+   public static void printDivider() {
+     for (int i = 0; i < 84; i++ ) System.out.print("-");
+     System.out.println("");
+   }
    public static String padTwenty(String s)
    {
      int count = s.length();
