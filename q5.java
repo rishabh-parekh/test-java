@@ -1,23 +1,26 @@
 /*
-1-Test Class
+Quiz-5
 */
 
 public class q5 {
    public static void main(String[] args) {
-      //q1  for (int i = 1; i < 100; i = i * 2) {
+      //q1 : Answer B
+      // for (int i = 1; i < 100; i = i * 2) {
       //   if (i / 50 == 0) {
       //     System.out.println("The Value of I :" + i);
       //   }
       // }
 
-      //q2  for (int x = 1 ; x < 5 ; x++) { // Outer Loop is number of rows
+      //q2: Answer A
+      //  for (int x = 1 ; x < 5 ; x++) { // Outer Loop is number of rows
       //   for (int z = 0; z <= x; z ++) { // Inner loop is number of columns
       //     System.out.print(x*z + " ");
       //   }
       //   System.out.println("");
       // }
 
-      //q3 boolean a, b, c;
+      //q3: Answer C
+      // boolean a, b, c;
       // a = true;
       // b = true;
       // c = (a && b) || !(a || b);
@@ -33,7 +36,8 @@ public class q5 {
       // System.out.println("Value of c : " + c);
 
 
-      //q4 int x = 10 ;
+      //q4 Answer C
+      // int x = 10 ;
       // int y = 3 ;
       //
       // boolean b = true;
@@ -51,6 +55,7 @@ public class q5 {
       //      }
       // }
 
+      // q5: Answer B
       int i = 1;
       int k = 1;
 
@@ -61,7 +66,7 @@ public class q5 {
       }
 
       System.out.println(k);
-      
+
 
    }
 }
