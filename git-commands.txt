@@ -1,0 +1,14 @@
+1. To pull new code from the git repo
+
+git remote set-url origin git@github-rishabh:rishabh-parekh/test-java
+git pull
+
+2. To push code to the git repo
+
+// This is the repository you are targeting. This is only one time per repo
+git remote set-url origin git@github-rishabh:rishabh-parekh/test-java
+
+// This is for every change you make
+git add *
+git commit -m "Adding new files.... whatever message is important"
+git push origin master
