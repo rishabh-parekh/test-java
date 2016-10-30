@@ -29,17 +29,16 @@ public class SlotMachine {
           System.out.println("Sorry, you are out of money. Goodbye," + player.getName());
           return;
         }
-
+        System.out.println("You have $" + player.getAmount() + " money left.");
         System.out.println("Would you like to bet or quit. Enter s to spin and q to quit");
         String option = scanner.nextLine();
-        System.out.println("Option selected is: " + option);
         if (option.equals("q")) {
             System.out.println("You cash-out amount is " + player.getAmount());
             System.out.println("Good bye! " + player.getName());
             return;
         }
 
-        System.out.println("You have " + player.getAmount() + "money left. How much money would you like to bet");
+        System.out.println("How much money would you like to bet");
         double bet = scanner.nextDouble();
         scanner.nextLine(); //throw away the \n not consumed by nextInt()
 
