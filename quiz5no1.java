@@ -1,4 +1,4 @@
-public class quiz5 {
+public class quiz5no1 {
 
    public static void main (String [] args) {
       // Question 1 program amswer
@@ -12,3 +12,5 @@ public class quiz5 {
 
 
 }
+
+
