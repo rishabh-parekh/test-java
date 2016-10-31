@@ -19,7 +19,7 @@ public class Spinner {
     return draw;
   }
 
-  public boolean fiveInRow() {
+  public boolean fiveOfKind() {
 
       int match = Collections.frequency(this.draw,this.draw.get(0).intValue());
       if (match == 5)
@@ -29,66 +29,80 @@ public class Spinner {
   }
 
 
-  public boolean fourInRow() {
-    if (((this.draw.get(0).intValue() == this.draw.get(1).intValue()) &&
-         (this.draw.get(1).intValue() == this.draw.get(2).intValue()) &&
-          (this.draw.get(2).intValue() == this.draw.get(3).intValue())
-        ) ||
-        ((this.draw.get(1).intValue() == this.draw.get(2).intValue()) &&
-             (this.draw.get(2).intValue() == this.draw.get(3).intValue()) &&
-              (this.draw.get(3).intValue() == this.draw.get(4).intValue())
-        ))
-      return true;
-     else
-       return false;
-
-  }
-
-  public boolean threeInRow() {
-
-    if (((this.draw.get(0).intValue() == this.draw.get(1).intValue()) &&
-         (this.draw.get(1).intValue() == this.draw.get(2).intValue()))
-        ||
-       ((this.draw.get(1).intValue() == this.draw.get(2).intValue()) &&
-        (this.draw.get(2).intValue() == this.draw.get(3).intValue()))
-        ||
-       ((this.draw.get(2).intValue() == this.draw.get(3).intValue()) &&
-          (this.draw.get(3).intValue() == this.draw.get(4).intValue()))
-       )
-       return true;
-      else
-        return false;
-
-  }
-
-  public boolean twothreeInRow() {
-
-    if ((this.draw.get(0).intValue() == this.draw.get(1).intValue()) &&
-         (this.draw.get(1).intValue() == this.draw.get(2).intValue())
-        )
+  public boolean fourOfKind() {
+    for (int i = 0; i < 5 ; i ++)
     {
-      if (twoInRow(3))
-      {
-          return true;
-      }
-    }
-
-    if ((this.draw.get(2).intValue() == this.draw.get(3).intValue()) &&
-             (this.draw.get(3).intValue() == this.draw.get(4).intValue())
-        )
-    {
-      if (twoInRow(0))
-      {
-          return true;
-      }
+      int num = this.draw.get(i).intValue();
+      int match = Collections.frequency(this.draw,num);
+      if (match == 4)
+        return true;
     }
     return false;
   }
 
-  public boolean twoInRow(int index) {
-    if (this.draw.get(index).intValue() == this.draw.get(index+1).intValue())
+  public boolean threeOfKind() {
+    for (int i = 0; i < 5 ; i ++)
+    {
+      int num = this.draw.get(i).intValue();
+      int match = Collections.frequency(this.draw,num);
+      if (match == 3)
+        return true;
+    }
+    return false;
+  }
+
+  public boolean twothreeOfKind() {
+    boolean two = false;
+    boolean three = false;
+    for (int i = 0; i < 5 ; i ++)
+    {
+      int num = this.draw.get(i).intValue();
+      int match = Collections.frequency(this.draw,num);
+      if (match == 2)
+        two = true;
+      if (match == 3)
+        three = true;
+    }
+    if (two && three)
       return true;
-     else
+    else
       return false;
+  }
+
+  public boolean twotwoOfKind() {
+    boolean firstTwo = false;
+    boolean secondTwo = false;
+    int firstseq = -1;
+
+    for (int i = 0; i < 5 ; i ++)
+    {
+      int num = this.draw.get(i).intValue();
+      int match = Collections.frequency(this.draw,num);
+      if (match == 2) {
+          if (firstTwo) {
+            if (firstseq != num)
+              secondTwo = true;
+          }
+          else {
+            firstseq = num;
+            firstTwo = true;
+          }
+      }
+    }
+    if (secondTwo)
+      return true;
+    else
+      return false;
+  }
+
+  public boolean twoOfKind() {
+    for (int i = 0; i < 5 ; i ++)
+    {
+      int num = this.draw.get(i).intValue();
+      int match = Collections.frequency(this.draw,num);
+      if (match == 2)
+        return true;
+    }
+    return false;
   }
 }

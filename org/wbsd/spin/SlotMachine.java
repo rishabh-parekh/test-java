@@ -55,30 +55,29 @@ public class SlotMachine {
          }
          System.out.println("");
 
-        if (s.fiveInRow()) {
+        if (s.fiveOfKind()) {
           player.setAmount(player.getAmount() + 30);
-          System.out.println("Five in a row!!! , your new amount is : " + player.getAmount());
+          System.out.println("Five of a kind!!! , your new amount is : " + player.getAmount());
         }
-        else if (s.fourInRow()) {
+        else if (s.fourOfKind()) {
           player.setAmount(player.getAmount() + 15);
-          System.out.println("Four in a row!!! , your new amount is : " + player.getAmount());
-
+          System.out.println("Four of a kind!!! , your new amount is : " + player.getAmount());
         }
-        else if (s.twothreeInRow()) {
+        else if (s.twothreeOfKind()) {
           player.setAmount(player.getAmount() + 8);
-          System.out.println("Three in a row and  two in a row , your new amount is : " + player.getAmount());
+          System.out.println("Three of a kind and  two of a kind , your new amount is : " + player.getAmount());
         }
-        else if (s.threeInRow()) {
+        else if (s.threeOfKind()) {
           player.setAmount(player.getAmount() + 6);
-          System.out.println("Three in a row!!! , your new amount is : " + player.getAmount());
+          System.out.println("Three of a kind!!! , your new amount is : " + player.getAmount());
         }
-        else {
-          for (int i = 0; i < 4 ; i++ ) {
-            if (s.twoInRow(i)) {
-               player.setAmount(player.getAmount() + 2);
-               System.out.println("Two in a row!!! , your new amount is : " + player.getAmount());
-            }
-          }
+        else if (s.twotwoOfKind()) {
+          player.setAmount(player.getAmount() + 4);
+          System.out.println("Two of a kind and  two of a kind , your new amount is : " + player.getAmount());
+        }
+        else if (s.twoOfKind()) {
+          player.setAmount(player.getAmount() + 2);
+          System.out.println("Two of a kind!!! , your new amount is : " + player.getAmount());
         }
       }
    }
