@@ -56,27 +56,27 @@ public class SlotMachine {
          System.out.println("");
 
         if (s.fiveOfKind()) {
-          player.setAmount(player.getAmount() + 30);
+          player.setAmount(player.getAmount() + 30*bet);
           System.out.println("Five of a kind!!! , your new amount is : " + player.getAmount());
         }
         else if (s.fourOfKind()) {
-          player.setAmount(player.getAmount() + 15);
+          player.setAmount(player.getAmount() + 15*bet);
           System.out.println("Four of a kind!!! , your new amount is : " + player.getAmount());
         }
         else if (s.twothreeOfKind()) {
-          player.setAmount(player.getAmount() + 8);
+          player.setAmount(player.getAmount() + 8*bet);
           System.out.println("Three of a kind and  two of a kind , your new amount is : " + player.getAmount());
         }
         else if (s.threeOfKind()) {
-          player.setAmount(player.getAmount() + 6);
+          player.setAmount(player.getAmount() + 6*bet);
           System.out.println("Three of a kind!!! , your new amount is : " + player.getAmount());
         }
         else if (s.twotwoOfKind()) {
-          player.setAmount(player.getAmount() + 4);
+          player.setAmount(player.getAmount() + 4*bet);
           System.out.println("Two of a kind and  two of a kind , your new amount is : " + player.getAmount());
         }
         else if (s.twoOfKind()) {
-          player.setAmount(player.getAmount() + 2);
+          player.setAmount(player.getAmount() + 2*bet);
           System.out.println("Two of a kind!!! , your new amount is : " + player.getAmount());
         }
       }
