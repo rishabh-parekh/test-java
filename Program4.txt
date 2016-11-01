@@ -1,0 +1,36 @@
+#Program 4 - Election Results
+
+
+Name: Rishabh Parekh
+
+Date: 11/01/2016
+
+Hour: 3rd Hour
+
+Program #4
+
+
+#Program Description:
+This program is designed to calculate the election results for the two candidates up for election. The number of precincts is unknown, hence the program requests that as a input. Based on that for each precincts the program request the votes for each candidate. The program then calculates who is the winner, how many precincts did the candidate win, by what percentage of vote and by what percentage of precincts.
+
+
+#Algorithm
+
+##Input:
+
+Request from the User the number of precincts. The user enters any number of precincts.
+Then for each of the precinct, request the number of votes for each of the candidates Polly Tichen and  Ernest Orator.
+As you get the votes per precinct, calculate whether the winner of the precinct is Polly or Ernest.
+Keep a count of how many precincts did Polly or Ernest win and increase the count based on the precinct vote count.
+Also keep an tally of total vote by adding the precinct vote for each candidate to the total vote for the each candidate.
+
+##Output:
+
+Once you get all the precinct data, print out the number of precincts won by each candidate
+Next, print out the total votes for each of the candidates.
+Next, print out the percentage of votes for each of the candidates, by dividing to total votes for the candidate by the total votes for both the candidates.
+You can round this to the nearest number.
+
+Next, print out the percentage of precincts won for each of the candidates, by dividing the total precincts won by the candidate with the total number of precincts.
+
+Special case, If there is a tie between the two candidates for a precincts, ignore the precinct in the count of the precincts won by either of the candidate.
