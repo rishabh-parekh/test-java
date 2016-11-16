@@ -49,9 +49,9 @@ public class ElectionResults {
      }
 
     String winner = "";
-    if (precinct_count_p > precinct_count_e) {
+    if (total_votes_p > total_votes_e) {
       winner = "Polly Tichen is the Winner";
-    } else if (precinct_count_e > precinct_count_p) {
+    } else if (total_votes_e > total_votes_p) {
       winner = "Ernest Orator is the Winner";
     } else
       winner = "Its a Tie";
