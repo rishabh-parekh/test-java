@@ -2,9 +2,7 @@
 /* The intent of this class is to cover all the topics in the Module 4.
 Here are the main topics:
   Null References
-  This Reference
-  Alias
-  Static Modifer
+
   Exceptions
   Interfaces
   AP Java Interfaces
@@ -46,7 +44,7 @@ public class Module4NPE {
      }
      // It is always a good practice to make sure you are initializing your instances (objects)
      // Second good practice is always have try..catch blocks of code you are not sure of, so you can handle exceptions gracefully.
-     
+
    }
 
    // This method will throw a Null Pointer Exception during runtime, if the String ns which is part of the Instance
