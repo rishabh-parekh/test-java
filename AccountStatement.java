@@ -2,9 +2,11 @@ import java.io.*;
 import java.util.*;
 import java.text.NumberFormat;
 
-public class AccountStatement {
+public class AccountStatement
+{
 
-   public static void main (String [] args) {
+   public static void main (String [] args)
+   {
 
      double previousBalance = 0;
      double additionalCharges = 0;
