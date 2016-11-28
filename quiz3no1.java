@@ -6,8 +6,8 @@ public class quiz3no1 {
        double b = 10.7;
        double c = a + b;
        // int d = a + (int)c;
-       int d = a + c;
-       System.out.println(c + "" + d);
+       //int d = a + c;
+       //System.out.println(c + "" + d);
    }
 
 }

@@ -53,7 +53,7 @@ public class Chap4SA
          System.out.println("Print the value of b: " + b);
          b = c4.evenlyDivisible(12,10);
          System.out.println("Print the value of b: " + b);
-         String s = c4.multiConcat("hi",1);
+         s = c4.multiConcat("hi",1);
          System.out.println("Print the value of s: " + s);
          s = c4.multiConcat("hi");
          System.out.println("Print the value of s: " + s);
