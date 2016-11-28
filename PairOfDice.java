@@ -8,16 +8,15 @@ public class PairOfDice
 
     public PairOfDice()
     {
-		 //This constructor creates both pairs of dice
+         //This constructor creates both pairs of dice
          d1 = 0;
          d2 = 0;
-
     }
     
     public void rollingTheDice()
     {
 
-		 // The rolling the dice method says that you have to get 2 random values from both the dice that...
+// The rolling the dice method says that you have to get 2 random values from both the dice that...
          Random r = new Random();
          this.d1 = r.nextInt(6) + 1; // Returns a random number from 1 through 6
          this.d2 = r.nextInt(6) + 1; // Returns a random number from 1 through 6
