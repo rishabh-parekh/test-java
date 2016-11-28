@@ -1,33 +1,38 @@
-import java.util.Random;
+import java.io.*;
+import java.util.*;
 
-public class PairofDice
+public class PairOfDice
 {
-  int dice1;
-  int dice2;
+    private int d1;
+    private int d2;
 
-  public PairofDice()
-  {
-  }
+   public PairOfDice()
+	 {
+		 //This constructor creates both pairs of dice
+         d1 = 0;
+         d2 = 0;
 
-  public void RollingTheDice()
-  {
-    Random r = new Random();
-    dice1 = r.nextInt(6)+1;
-    dice2 = r.nextInt(6)+1;
-  }
+	 }
+	 public void rollingTheDice()
+	 {
 
-  public int TotalofDice()
-  {
-    return dice1 + dice2;
-  }
+		 // The rolling the dice method says that you have to get 2 random values from both the dice that...
+         Random r = new Random();
+         this.d1 = r.nextInt(6) + 1; // Returns a random number from 1 through 6
+         this.d2 = r.nextInt(6) + 1; // Returns a random number from 1 through 6
 
-  public int SeeDieOne()
-  {
-    return dice1;
-  }
+	 }
+	 public int totalOfDice()
+	 {
+         return this.d1 + this.d2;
+	 }
+	 public int seeDiceOne()
+	 {
+         return this.d1;
+	 }
+	 public int seeDiceTwo()
+	 {
+         return this.d2;
+	 }
 
-  public int SeeDieTwo()
-  {
-    return dice2;
-  }
-}
+ }

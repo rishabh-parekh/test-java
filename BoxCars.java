@@ -5,30 +5,25 @@ public class BoxCars
 {
   public static void main (String [] args)
   {
-    int NumberofBoxCars = 0;
-    PairofDice pd = new PairofDice();
+    int numberofBoxCars = 0;
+    PairOfDice pd = new PairOfDice();
     Scanner scanner = new Scanner(System.in);
     System.out.println("How many times do you want to roll");
-    int NumberofRolls = scanner.nextInt();
-    System.out.println("Number of Rolls : " + NumberofRolls);
+    int numberOfRolls = scanner.nextInt();
+    System.out.println("Number of Rolls : " + numberOfRolls);
 
-    for(int i = 0; i < NumberofRolls; i++)
+    for(int i = 0; i < numberOfRolls; i++)
     {
-      pd.RollingTheDice();
-      int d1 = pd.SeeDieOne();
-      System.out.println("Dice 1 : " + d1);
-      int d2 = pd.SeeDieTwo();
-      System.out.println("Dice 2: " + d2);
+      pd.rollingTheDice();
+      int d1 = pd.seeDiceOne();
+      int d2 = pd.seeDiceTwo();
 
       if(d1==6 && d2==6)
       {
-        System.out.println("130xCar");
-        NumberofBoxCars++;
+        System.out.println("Dice 1 : " + d1 + " Dice 2: " + d2);
+        numberofBoxCars++;
       }
-      else
-        System.out.println("Please Try Again");
     }
-    System.out.println("Number of Box Cars : " + NumberofBoxCars);
-
+    System.out.println("Number of Box Cars : " + numberofBoxCars);
   }
 }
