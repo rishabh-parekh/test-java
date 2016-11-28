@@ -45,6 +45,27 @@ public class Chap4SA
 
          int max = c4.maxofTwo(20,20);
          System.out.println(max);
+        
+         boolean b = c4.larger( 10.2, 10.3);
+         System.out.println("Print the value of b: " + b);
+
+         b = c4.evenlyDivisible(10,2);
+         System.out.println("Print the value of b: " + b);
+         b = c4.evenlyDivisible(12,10);
+         System.out.println("Print the value of b: " + b);
+         String s = c4.multiConcat("hi",1);
+         System.out.println("Print the value of s: " + s);
+         s = c4.multiConcat("hi");
+         System.out.println("Print the value of s: " + s);
+
+         b = c4.isIsoceles(1,1,1);
+         System.out.println("Print the value of b: " + b);
+         b = c4.isIsoceles(1,2,2);
+         System.out.println("Print the value of b: " + b);
+         b = c4.isIsoceles(1,2,3);
+         System.out.println("Print the value of b: " + b);
+
+        
     }
 
     public double translate(int x)
@@ -102,4 +123,51 @@ public class Chap4SA
         else
             return n2;
     }
+    
+    
+   public boolean larger(double x, double y)
+   {
+        if (x > y)
+            return true;
+        else
+            return false;
+   }
+
+   public boolean evenlyDivisible (int x, int y)
+   {
+       if (x != 0 && y != 0)
+       {
+            if (x%y == 0 || y%x == 0)
+                return true;
+        }
+        return false;
+
+   }
+
+
+   public String multiConcat (String s, int x)
+   {
+       String rs = s;
+       for (int i = 1; i < x ; i ++)
+            rs = rs + s;
+        return rs;
+   }
+
+   public String multiConcat (String s)
+   {
+        return s+s;
+   }
+
+
+   public boolean isIsoceles (int a, int b, int c)
+   {
+        boolean rb = true;
+        if (a == b && b == c)
+            rb = false;
+        else if (a != b && b != c)
+            rb = false;
+        return rb;
+   }
+    
+    
 }
